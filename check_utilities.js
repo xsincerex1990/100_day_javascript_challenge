@@ -11,6 +11,8 @@ function icheck() {
 
 // an IIFE (Immediately Invoked Function Expressions) 
 // Discussion in the scope & closures
+//Below, YourFeat is not at all a global variable, but were still using the safety guard of typeof to make
+//it safe to check for. And importantly, here theres no object we can use to make the check, so typeof is useful
 
 
 (function(){
@@ -24,10 +26,8 @@ function icheck() {
         icheck();
 })();
 
-//ABOVE^ YourFeat is not at all a global variable, but were still using the safety guard of typeof to make
-//it safe to check for. ANd importantly, here theres no object we can use to make the check, so typeof is useful
 
-//Below its a pattern called "dependency injection" where instead of icheck() inspectong implicilty for yourfeat 
+//Below its a pattern called "dependency injection" where instead of icheck() inspecting implicilty for YourFeat 
 //to be defined outside or around it would need to have the dependcy explicitly passed in like this below:
 
 
