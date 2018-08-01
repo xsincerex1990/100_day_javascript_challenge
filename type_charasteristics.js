@@ -29,5 +29,5 @@ a [0] = 1;
 a[2] = [3]; // a[1] was skipped
 a[1]; // UNDEFINED!!
 a.length; // WILL GIVE YOU 3
-
+ 
 
