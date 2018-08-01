@@ -36,7 +36,7 @@ x[1] = "P";
 x; // "foo"
 
 y[1] = "P";
-y;  //["f", "P", "o"]
+y;  //["f", "P", "o"] 
 
 //array modify in place
 y.push( "!" ); //["f", "P", "o" "!"]
