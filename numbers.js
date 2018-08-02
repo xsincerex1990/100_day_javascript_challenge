@@ -1,7 +1,7 @@
 //toFized() method alows you to specify how many
 //fractional decimal places youd like the value to show
 //Notice how they are outputted as a string representation
-
+// on my grind
 var a = 32.59
 
 a.toFixed( 0 ); //32
