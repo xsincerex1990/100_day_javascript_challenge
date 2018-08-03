@@ -37,5 +37,5 @@ foo( "black", "seed" ); //["black", "seed", "hello"]
 // AS OF ES6 theres also a built-in feat called Array.from(..)
 // that can do the same task
  
-var x = Array.from( arguments ); 
+var x = Array.from( arguments );  
 
