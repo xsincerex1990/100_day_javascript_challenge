@@ -1,17 +1,18 @@
-//Side effect of using binary floating-point numbers
-//Mathematically, we know that first statement below should be true. Why is it false?
-//the representations for 0.1 and 0.2 in binary floating-point are not exact, 
-//so when they are added,
-//the result is not exactly 0.3. It's really close: 0.30000000000000004,
-//but if your comparison fails, "close" is irrelevant.
+/*Side effect of using binary floating-point numbers
+Mathematically, we know that first statement below should be true. Why is it false?
+the representations for 0.1 and 0.2 in binary floating-point are not exact, 
+so when they are added,
+the result is not exactly 0.3. It's really close: 0.30000000000000004,
+but if your comparison fails, "close" is irrelevant.*/
+
 0.1 + 0.2 === 0.3; // false
 0.4 + 0.5 === 0.9; //true
 0.3 + 0.6 === 0.9; //false
 
-//What if we did need to compare two numbers, like 0.1 + 0.2 to 0.3, 
-//knowing that the simple equality test fails?
-//The Number.EPSILON property represents the difference between
-//1 and the smallest floating point number greater than 1.
+/*What if we did need to compare two numbers, like 0.1 + 0.2 to 0.3, 
+knowing that the simple equality test fails?
+The Number.EPSILON property represents the difference between
+1 and the smallest floating point number greater than 1.*/
 
 
 //The most commonly accepted practice is to use a tiny "rounding error" value as the tolerance 
