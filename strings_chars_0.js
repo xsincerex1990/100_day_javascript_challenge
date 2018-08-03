@@ -10,4 +10,4 @@ var c = a.split("") // ["f", "o", "o"]
 c.reverse(); // ["o", "o", "f"]
 c.join("") // "oof"
 
-//a.reverse(); TYPE ERROR
+//a.reverse(); TYPE ERROR 
