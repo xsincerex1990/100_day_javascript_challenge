@@ -35,4 +35,4 @@ function icheck(YourFeat) {
     var helper = YourFeat || function() { /* default feat */ } 
 
     var val = helper(); 
-}
+} 
