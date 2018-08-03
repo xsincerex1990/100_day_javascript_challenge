@@ -41,5 +41,5 @@ a.toPrecision( 6 );//42.5900
 
 var onethousand = 1E3; // means 1 * 10^3
 var onemillionhundredthousand = 1.1E6 // means 1.1 * 10^6
-
+ 
 
