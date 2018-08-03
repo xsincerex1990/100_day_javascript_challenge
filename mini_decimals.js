@@ -5,11 +5,6 @@
 //but if your comparison fails, "close" is irrelevant.
 //WEIRD SHIT?
 0.1 + 0.2 === 0.3; // false
-<<<<<<< HEAD
 0.4 + 0.5 === 0.9; //true
 0.3 + 0.6 === 0.9; //false
-=======
 
-
- 
->>>>>>> 2656a9c180a08b5e4889291d744c067b2e573b4b
