@@ -62,4 +62,4 @@ console.log(d) //"F.O.O"
 //ARRAYS have a reverse() in place mutator but STRINGS do not.
 
 x.reverse; //undefined
-y.reverse();// [ '!', 'o', 'P', 'f' ]
+y.reverse();// [ '!', 'o', 'P', 'f' ] 
