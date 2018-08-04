@@ -1,8 +1,9 @@
 /* "Safe" values
  * Number.MAX.SAFE.INTERGER is predefined in ES6 
  * -9007199254740991 = Number.MIN_SAFE_INTEGER
- *  Remember theres a "big number" utility if you need it
- */
+ * 9007199254740991 = Number.MAX_SAFE_INTEGER
+ * Remember theres a "big number" utility if you need it
+ * /
 
 //To test if a value is an integer ..
 Number.isInteger( 23 ); //true
