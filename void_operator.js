@@ -49,3 +49,56 @@ window.isNaN( b ); // true wtf? Took too literally.
 this is a 19 year old bug. 
 **/
 
+
+/**
+ * For ES6 a utility has been provided: Number.isNaN(). 
+ * A simple polyfill to safely check in preES-6 browsers:**/
+
+if (!Number.isNaN) { 
+	Number.isNaN = function(n) {
+		return ( 
+			typeof n === "number" && window.isNaN( N )
+		);
+	};
+}
+
+var x = 5 / "foo"; 
+var z = "foo"; 
+
+Number.isNaN(x); //true
+Number.isNaN(z); //false 
+
+
+/**we can take advantage of that peculiar fact that NaN isn't equal to itself**/
+typeof NaN; //"number"
+
+if (!Number.isNaN) {
+	Number.isNaN = function(n) {
+		return n !== n;
+	};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
