@@ -73,19 +73,43 @@ soup; // [4,5,6,7]
 
 /** To effectively pass a value like array by value-copy you need to manually
  * make a copy of it so that the reference passed doesn't still point 
- * to the original. For example: **/
+ * to the original. For example: **/ 
+
+foo( soup.slice() ); //with no parameters by default makes a copy(shallow) of the array
+//So, we pass in a reference only to the copied array(soup), and thus foo() 
+//cannot affect the contents of soup after giving you the foo() desired output.
+
+/** OK this is confusing. but to do the opposite of slice (pass a value were changes
+ * can be seen you have to wrap in a compound value **/
+
+function iwrap(x) {
+	x.a = 42;
+}
+
+var obj = {
+	a: 2
+};
+
+foo(obj);
+
+obj.a;  // 42
+
+//???
 
 
-//Be RIGHT BACK
+/** You may feel like changing the value 2 by the box with number object
+ * but you wont be able to change the primitive value like u might expect**/
 
+function foo(x) {
+	x = x + 1;
+	x; // 3
+}
 
+var a = 2;
+var b = new Number( a ); // or equivalently `Object(a)`
 
-
-
-
-
-
-
+foo( b );
+console.log( b ); // 2, not 3
 
 
 
