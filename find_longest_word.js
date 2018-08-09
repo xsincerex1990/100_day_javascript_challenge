@@ -10,14 +10,14 @@ function ifind(str) {
 	console.log(maxlength)
 }
 
-ifind("This a super ridiculous extradurnamrymanbt string")
+ifind("This a super sentenceindjfhcuibf")
 
 
 //Intermediate Solution
 
 function ifind2(sem) {
-	return sem.split(' ').reduce(function(x, y) {
-		return Math.max(x, y.length)
+	return sem.split(' ').reduce((acc, cv) => {
+		return Math.max(acc, cv.length)
 	}, 0);
 
 }
