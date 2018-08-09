@@ -38,10 +38,16 @@ function ifind3(str) {
 		str.splice(1, 1);
 		return ifind3(str.join(' '));
 	}
-
+        //I think i clearly understand splice & slice but i dont fully grasp
+	//why "str.slice(1, str.length)" is making the whole function work..
+	//if value at str[0] <= str[1] then im consufed why 
+	//slice (1, str.length) isnt this slicing words that havent been counted??
+	//Idk. Ask larry. 
 	if (str[0].length <= str[1].length) {
 		return ifind3(str.slice(1, str.length).join(' '));
 	}
+        
 }
+
 
 console.log(ifind3("This a super sentenceindjfhcuibf"))
