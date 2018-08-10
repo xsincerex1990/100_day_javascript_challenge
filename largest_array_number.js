@@ -1,6 +1,6 @@
 //This algorithm will find the largest number in an array
 
-var arr = [
+var arr1 = [
 	[845, 745, 935, 124],
 	[647, 638, 345, 035],
 	[777, 666, 1111, 555],
@@ -20,7 +20,7 @@ function ifind(arr) {
 	}
 	return results;
 }
-console.log(ifind(arr))
+console.log(ifind(arr1))
 
 
 
@@ -34,4 +34,13 @@ function ifind2(arr) {
 	});
 }
 
-console.log(ifind2(arr))
+console.log(ifind2(arr1))
+
+function ifind3(arr) { 
+	return arr.map(Function.apply.bind(Math.max, null));
+}
+
+console.log(ifind3(arr1))
+
+
+
