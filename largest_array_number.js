@@ -22,3 +22,16 @@ function ifind(arr) {
 }
 console.log(ifind(arr))
 
+
+
+//Intermediate solution
+
+function ifind2(arr) {
+	return arr.map(function (group) {
+		return group.reduce(function(prev, current) {
+			return (current > prev) ? current:prev;
+		});
+	});
+}
+
+console.log(ifind2(arr))
