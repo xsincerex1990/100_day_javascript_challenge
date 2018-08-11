@@ -1,4 +1,5 @@
-//Algorithm to validate phone numbers
+//Algorithm to validate phone number
+//?4L
 
 function telCheck(str) {
 	var xxx = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
