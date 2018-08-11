@@ -32,7 +32,7 @@ console.log(isum1([4,1]));
 function isum2(arr) {
 	var sum = 0;
 	for (var i = Math.min(...arr); i <= Math.max(...arr); i++) {
-		sum += i;
+		sum += i;//sum = sum + i
 	}
 	return sum;
 }
