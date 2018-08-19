@@ -1,8 +1,7 @@
 function factorial(num) {
 	var product = 1
 	for (var i = num; i >= 1; --i) {
-		console.log(product *= i)
-		console.log(product)
+		product *= i;
 	}
 	return product
 }
