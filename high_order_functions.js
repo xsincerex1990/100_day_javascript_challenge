@@ -45,7 +45,3 @@ var fish = animals.filter(function(animal) {
 })
 
 
-
-
-
-
