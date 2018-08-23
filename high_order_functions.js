@@ -23,16 +23,19 @@ var animals = [
 	{name: "Dory", species: "fish"},
 ]
 
-/* we will remove the fishes below in the comment as an example using a normal for loop
+/*
+ *We will remove the fishes below in the comment as an example using a normal for loop. Note that you will have the dory & nemo in the fish object but it wont change the animals object
  
  var fish = []
  for (var i = 0; i < animals.length; i++) {
    if (animals[i].species === 'fish')
-     fish.push(animals.[i])
+     fish.push(animals[i])
      } 
 */
 
-/* Now to use the higher order filter function below,
+
+
+/*
    The callback function & filter function are composed together
 */
 
