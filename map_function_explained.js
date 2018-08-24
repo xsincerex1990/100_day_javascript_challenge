@@ -34,14 +34,11 @@ let newArr = arr1.map((val, i, arr1) => {
 });
 
 newArr; 
-/** 
- [
-  {value: 1, index: 0},
-  {value: 2, index: 1},
-  {value: 3, index: 2},
-  {value: 4, index: 3}
- ] 
-**/
+/*
+ [ { value: 1, index: 0 },
+  { value: 'a', index: 1 },
+  { value: 'b', index: 2 } ]
+*/
 
 /** Whatever we return within our map array is what is used to create our 
 new array**/
@@ -49,10 +46,10 @@ new array**/
 
 // What if we only want to transform some of the values in our array? 
 
-let arr2 = [1, 2, 3, 4]
+var arr2 = [1, 2, 3, 4]
 
 // Say We want to double the even numbers and leave the odd numbers the same
-let arr2 = arr2.map((v,i,a) => {
+var arr2 = arr2.map((v,i,a) => {
   if (v % 2 === 0){
     return v * 2;
   } else {
