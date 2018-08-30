@@ -11,7 +11,7 @@ function sqrt(x) {
 function writeIt() {
 	console.log(sqrt("four"));
 	console.log(sqrt(""));
-	console.log(sqrt("50"));
+	console.log(sqrt("49"));
 	console.log(sqrt("-4"));
 }
 writeIt();
