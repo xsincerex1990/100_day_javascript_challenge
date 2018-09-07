@@ -8,6 +8,6 @@ let artists = {
     },  
 };
 Object.defineProperty(artists, "pine", {get: function() {return this.frames[0];}});
-
+ 
 console.log(artists.mix); //South
 console.log(artists.pine) // West
