@@ -1,0 +1,9 @@
+//Higher order functions either take functions as parameters or return a fucntion as a a result
+
+map() makes new array
+filter() -- makes a new array
+reduce() -- reduce reduces down to a single value & does not make new array..although it can.
+
+fill() -- does not make new array
+sort() -- does not make new array
+
