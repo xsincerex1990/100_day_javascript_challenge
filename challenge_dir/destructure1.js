@@ -1,12 +1,25 @@
-//Destructuring is a ES6 feature that allows you to break objects & arrays up into variables
-//It comes in good when dealing with optional objects
+//Destructing is a js expression that allows you to unpack values from arrays...
+//or it can unpack properties from objects
 
-herbs({
-        colon: ["Cascara sagrada", " Capsicum"],
-        strength: ["Yohimbe", " Ginseng", " Pumpkin seed", " Saw palmetto"],
-        formula: ["Bu`rdock", " Black Cohosh", " Alfafa", " Parsley"]
-})
+var a, b, rest;
 
-function herbs({ diabetes = ["Golden Seal", " Uva Ursi", " Juniper berries"], colon}) {
-	console.log(diabetes + " is good for diabetes. " + colon + " is good for the colon.")
-}
+[a, b] = [10, 20];
+
+console.log(a); // 10
+console.log(b); // 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log(rest); // [30, 40, 50]
+
+({a, b} ={a: 10, b: 20,});
+a; //10
+b; //20
+
+({a, b, ...rest} = {a: 15, b: 25, c: 40, d: 50});
+a; // 15
+b; // 25
+
+rest; // {c: 40, d: 50}
+
+
