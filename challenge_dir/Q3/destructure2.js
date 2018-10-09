@@ -22,3 +22,12 @@ console.log(a); // 1
 console.log(b); // 7
 
 
+//Variables can be swapped...without destructuring, to swap variables you would need a temporary value
+
+var a = 1;
+var b = 2;
+
+[a, b] = [b, a]
+
+console.log(a); // 2
+console.log(b); // 1
