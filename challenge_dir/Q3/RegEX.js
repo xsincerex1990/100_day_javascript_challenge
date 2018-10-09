@@ -1,26 +1,27 @@
+console.time("time");
 const r = /[0-9]/;
 let rt;
 let lt;
 function check(pin) {
-        let x = pin.split('');
+    
+	if (parseInt(pin) > 0) {
+		rt = true;
+	} else {
+		rt = false;
+	}
 
-
-        for (let i = 0; i < x.length; i++) {
-                 rt = r.test(x[i]);
-        }
-        if  (x.length == 4 || x.length ==  6 ) {
-                lt = true
-                
+        if  (pin.length == 4 || pin.length ==  6 ) {
+                lt = true;        
         } else {
-                lt = false
+                lt = false;
         }
 
         if (rt == true && lt == true) {
-                console.log("Good")
+                return true;
         } else {
-                console.log("Give me a valid pin!")
+                return false;
         }
 }
-check("443777");
+check("1.234"); // hacked with 877J
 
-
+console.timeEnd("time"); // approximately  0.077 ms with "1.234" as a pin number && with  
