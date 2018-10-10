@@ -1,21 +1,26 @@
-console.time("time");
-const r = /[0-9]/g;
+const r = /[0-9]/;
 let lt;
-let rt = '';
-function check(pin) {
+let rt;
+function validatePIN(pin) {
     
 	if (parseInt(pin) > 0 && r.test(pin)) {
-		rt = pin.match(r);
-	} 
+		let s = pin.split('');
+		for (let i = 0; i < s.length; i++) {
+			if (typeof parseInt(s[i]) !== 'number') {
+				rt = false;
+				break;
+			} else {
+				rt += s[i]
+			}
+		}} 
 
         if  (rt.length == 4 || rt.length ==  6 ) {
                 lt = true;        
         } 
         if (rt && lt) {
-                return true;
+                return console.log(true);
         } else {
-                return false;
+                return console.log(false);
         }
 }
-check("888J"); // 877J hacked solved
-console.timeEnd("time"); // approximately  0.135 ms with "888j" as a pin number && with  
+validatePIN("1.234");  
