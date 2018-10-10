@@ -1,27 +1,21 @@
 console.time("time");
-const r = /[0-9]/;
-let rt;
+const r = /[0-9]/g;
 let lt;
+let rt = '';
 function check(pin) {
     
-	if (parseInt(pin) > 0) {
-		rt = true;
-	} else {
-		rt = false;
-	}
+	if (parseInt(pin) > 0 && r.test(pin)) {
+		rt = pin.match(r);
+	} 
 
-        if  (pin.length == 4 || pin.length ==  6 ) {
+        if  (rt.length == 4 || rt.length ==  6 ) {
                 lt = true;        
-        } else {
-                lt = false;
-        }
-
-        if (rt == true && lt == true) {
+        } 
+        if (rt && lt) {
                 return true;
         } else {
                 return false;
         }
 }
-check("1.234"); // hacked with 877J
-
-console.timeEnd("time"); // approximately  0.077 ms with "1.234" as a pin number && with  
+check("888J"); // 877J hacked solved
+console.timeEnd("time"); // approximately  0.135 ms with "888j" as a pin number && with  
