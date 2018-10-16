@@ -1,0 +1,10 @@
+html {
+    background-image: linear-gradient(to bottom, rgba(139, 215, 255, 255), rgb(107, 82, 176, 254));
+}
+.header {
+    background-image: url('/images/logo.png'), url('/images/nologobg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1200px;
+}
